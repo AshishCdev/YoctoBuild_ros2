@@ -6,12 +6,6 @@
 /build/pseudodone
 /build/conf/sanity_info
 
-# Upstream Layer Repositories (Tracked separately via Git Submodules or Manifests)
-/sources/poky/
-/sources/meta-openembedded/
-/sources/meta-raspberrypi/
-/sources/meta-ros/
-
 # Generated Bootable Images & Flashable Artifacts
 *.wic
 *.wic.bz2
