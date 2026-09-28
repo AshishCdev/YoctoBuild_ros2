@@ -1,0 +1,34 @@
+# ==========================================
+# Yocto Build Artifacts & State Files
+# ==========================================
+build/tmp*/
+build/sstate-cache/
+build/downloads/
+build/cache/
+build/pseudodone
+build/bitbake*.log
+build/bitbake.lock
+build/bitbake.sock
+build/*.ipc
+
+# ==========================================
+# Yocto Local Build Configurations
+# ==========================================
+# Keeps local developer tweaks out of git history
+build/conf/local.conf
+build/conf/bblayers.conf
+build/conf/templateconf.cfg
+build/conf/sanity_info
+
+# Optional: Track configuration files by committing sample files (.sample)
+# If you want to track your exact configs, remove the two lines above.
+
+# ==========================================
+# IDEs, Editors & OS Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
