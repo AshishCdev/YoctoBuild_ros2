@@ -1,34 +1,34 @@
-# ==========================================
-# Yocto Build Artifacts & State Files
-# ==========================================
-build/tmp*/
-build/sstate-cache/
-build/downloads/
-build/cache/
-build/pseudodone
-build/bitbake*.log
-build/bitbake.lock
-build/bitbake.sock
-build/*.ipc
+# Yocto Build Output & Temporary Directories
+/build/tmp/
+/build/sstate-cache/
+/build/downloads/
+/build/cache/
+/build/pseudodone
+/build/conf/sanity_info
 
-# ==========================================
-# Yocto Local Build Configurations
-# ==========================================
-# Keeps local developer tweaks out of git history
-build/conf/local.conf
-build/conf/bblayers.conf
-build/conf/templateconf.cfg
-build/conf/sanity_info
+# Local Build Configurations (Keep local settings machine-specific)
+/build/conf/local.conf
+/build/conf/bblayers.conf
+/build/conf/templateconf.cfg
 
-# Optional: Track configuration files by committing sample files (.sample)
-# If you want to track your exact configs, remove the two lines above.
+# Upstream Layer Repositories (Tracked separately via Git Submodules or Manifests)
+/sources/poky/
+/sources/meta-openembedded/
+/sources/meta-raspberrypi/
+/sources/meta-ros/
 
-# ==========================================
-# IDEs, Editors & OS Files
-# ==========================================
+# Generated Bootable Images & Flashable Artifacts
+*.wic
+*.wic.bz2
+*.wic.bmap
+*.sdimg
+*.manifest
+*.tar.gz
+*.iso
+
+# IDE, OS, and Text Editor Files
 .vscode/
 .idea/
 *.swp
 *~
 .DS_Store
-Thumbs.db
