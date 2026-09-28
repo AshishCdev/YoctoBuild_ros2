@@ -6,11 +6,6 @@
 /build/pseudodone
 /build/conf/sanity_info
 
-# Local Build Configurations (Keep local settings machine-specific)
-/build/conf/local.conf
-/build/conf/bblayers.conf
-/build/conf/templateconf.cfg
-
 # Upstream Layer Repositories (Tracked separately via Git Submodules or Manifests)
 /sources/poky/
 /sources/meta-openembedded/
